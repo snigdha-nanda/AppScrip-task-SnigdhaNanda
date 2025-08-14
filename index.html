@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Shop Products - Best Online Store for Electronics, Clothing & Jewelry</title>
+    <meta name="description" content="Discover amazing products including electronics, men's and women's clothing, and jewelry. Shop now with great prices and fast delivery.">
+    <meta name="keywords" content="online shopping, electronics, clothing, jewelry, men's clothing, women's clothing">
+    <meta name="author" content="AppScrip Store">
+    
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Product Listing Page",
+        "description": "Browse our collection of electronics, clothing, and jewelry",
+        "url": "https://appscrip-task-snigdhananda.netlify.app"
+    }
+    </script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">DISCOVER OUR PRODUCTS</h1>
+            <p class="subtitle">Shop our curated collection of premium products with fast delivery and great prices.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Filters and Sort Section -->
+            <div class="filters-section">
+                <div class="items-count">
+                    <span id="itemCount">Loading...</span>
+                </div>
+                
+                <div class="filter-controls">
+                    <button class="filter-btn" id="filterToggle">
+                        <span>FILTER</span>
+                    </button>
+                    
+                    <div class="sort-dropdown">
+                        <select id="sortSelect">
+                            <option value="recommended">RECOMMENDED</option>
+                            <option value="price-low">PRICE: LOW TO HIGH</option>
+                            <option value="price-high">PRICE: HIGH TO LOW</option>
+                            <option value="newest">NEWEST FIRST</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Wrapper -->
+            <div class="content-wrapper">
+                <!-- Sidebar Filters -->
+                <aside class="sidebar" id="sidebar">
+                    <div class="filter-group">
+                        <h3>CUSTOMIZABLE</h3>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="customizable">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>IDEAL FOR</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" value="men"> Men</label>
+                            <label><input type="checkbox" value="women"> Women</label>
+                            <label><input type="checkbox" value="kids"> Baby & Kids</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>OCCASION</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" value="casual"> Casual</label>
+                            <label><input type="checkbox" value="formal"> Formal</label>
+                            <label><input type="checkbox" value="party"> Party</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>WORK</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" value="office"> Office</label>
+                            <label><input type="checkbox" value="outdoor"> Outdoor</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>FABRIC</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" value="cotton"> Cotton</label>
+                            <label><input type="checkbox" value="silk"> Silk</label>
+                            <label><input type="checkbox" value="wool"> Wool</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>SEGMENT</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" value="luxury"> Luxury</label>
+                            <label><input type="checkbox" value="premium"> Premium</label>
+                            <label><input type="checkbox" value="budget"> Budget</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>SUITABLE FOR</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" value="summer"> Summer</label>
+                            <label><input type="checkbox" value="winter"> Winter</label>
+                            <label><input type="checkbox" value="all-season"> All Season</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>RAW MATERIALS</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" value="organic"> Organic</label>
+                            <label><input type="checkbox" value="synthetic"> Synthetic</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>PATTERN</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" value="solid"> Solid</label>
+                            <label><input type="checkbox" value="printed"> Printed</label>
+                            <label><input type="checkbox" value="striped"> Striped</label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <section class="products-grid" id="productsGrid">
+                    <div class="loading">Loading products...</div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2>BE THE FIRST TO KNOW</h2>
+                    <p>Sign up for updates from our store.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your e-mail...">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>CONTACT US</h3>
+                    <p>+44 221 133 5360</p>
+                    <p>customercare@appscripstore.com</p>
+                    
+                    <h3>CURRENCY</h3>
+                    <div class="currency">
+                        <span>USD</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>OUR STORE</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Artisans</a></li>
+                        <li><a href="#">Boutiques</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">EU Compliances Docs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-group">
+                    <h3>QUICK LINKS</h3>
+                    <ul>
+                        <li><a href="#">Orders & Shipping</a></li>
+                        <li><a href="#">Join/Login as a Seller</a></li>
+                        <li><a href="#">Payment & Pricing</a></li>
+                        <li><a href="#">Return & Refunds</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-group">
+                    <h3>FOLLOW US</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                    
+                    <h3>WE ACCEPT</h3>
+                    <div class="payment-methods">
+                        <span>Credit Cards</span>
+                        <span>PayPal</span>
+                        <span>Bank Transfer</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Copyright © 2024 AppScrip Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
